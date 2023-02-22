@@ -1,0 +1,5 @@
+require("options")
+require("autocommands")
+require("keybinds")
+require("colorscheme")
+require("plugins")
