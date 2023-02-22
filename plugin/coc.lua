@@ -53,7 +53,7 @@ keyset("n", "gi", "<Plug>(coc-implementation)", { silent = true })
 keyset("n", "gr", "<Plug>(coc-references)", { silent = true })
 
 -- Use K to show documentation in preview window
-function _G.show_docs()
+local function show_docs()
 	local cw = fn.expand('<cword>')
 	if fn.index({ 'vim', 'help' }, bo.filetype) >= 0 then
 		api.nvim_command('h ' .. cw)
@@ -64,7 +64,7 @@ function _G.show_docs()
 	end
 end
 
-keyset("n", "K", '<CMD>lua _G.show_docs()<CR>', { silent = true })
+keyset("n", "K", show_docs, { silent = true })
 
 -- Symbol renaming
 keyset("n", "<F2>", "<Plug>(coc-rename)", { silent = true })
