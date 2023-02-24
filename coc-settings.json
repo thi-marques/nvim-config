@@ -14,5 +14,7 @@
   "semanticTokens.enable": true,
 
   // Show error when hovering any place in the line
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": true,
+
+  "rust-analyzer.enable": true
 }
