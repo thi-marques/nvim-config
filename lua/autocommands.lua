@@ -36,3 +36,10 @@ autocmd("BufWritePost", {
 	pattern = 'plugins.lua',
 	command = 'source <afile> | CocUpdateSync | PackerSync '
 })
+
+-- Prevent Markdown for complain about underscores
+autocmd("BufRead", {
+	group = commands_group,
+	pattern = { "*.md", "*.markdown" },
+	command = [[ hi link markdownError NONE ]]
+})
