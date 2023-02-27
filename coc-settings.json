@@ -13,8 +13,11 @@
   // Highlight support
   "semanticTokens.enable": true,
 
-  // Show error when hovering any place in the line
-  "diagnostic.checkCurrentLine": true,
+  // Set true to show error when hovering any place in the line
+  "diagnostic.checkCurrentLine": false,
+  // Display messages diagnostic in every line of code
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
 
   "rust-analyzer.enable": true
 }
