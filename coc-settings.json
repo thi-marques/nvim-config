@@ -1,6 +1,6 @@
 {
-  // Open new tab while navigating throught docs
-  "coc.preferences.jumpCommand": "tabe",
+  // Where open references while navigating throught docs
+  "coc.preferences.jumpCommand": "drop",
 
   // Prettier
   "prettier.arrowParens": "avoid",
