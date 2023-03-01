@@ -15,7 +15,8 @@ vim.g.coc_global_extensions = {
 	'coc-tsserver',
 	'coc-java',
 	'coc-lua',
-	'coc-rust-analyzer'
+	'coc-rust-analyzer',
+	'coc-sh'
 }
 
 packer.startup(function(use)
@@ -40,7 +41,7 @@ packer.startup(function(use)
 	-- JSONC
 	use('neoclide/jsonc.vim')
 
-  -- Markdown preview
+	-- Markdown preview
 	use({
 		"iamcco/markdown-preview.nvim",
 		run = "cd app && npm install",
