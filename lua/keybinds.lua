@@ -74,6 +74,9 @@ keyset('i', '<C-s>', '<ESC>:w<Return>', { silent = true })
 -- Backspace delete
 keyset('i', '<C-BS>', '<C-w>')
 
+-- Toggle wraplines
+keyset('', '<M-z>', function() vim.opt.wrap = not vim.opt.wrap:get() end)
+
 -- Vim visual multi
 keyset('n', '<C-L>', ':call vm#commands#find_all(0, 1)<cr>', { noremap = true, silent = true })
 -- keyset('n', '<C-j>', ':call vm#commands#add_cursor_down(0, v:count1)<cr>', { noremap = true, silent = true })
