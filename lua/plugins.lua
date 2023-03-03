@@ -16,7 +16,8 @@ vim.g.coc_global_extensions = {
 	'coc-java',
 	'coc-lua',
 	'coc-rust-analyzer',
-	'coc-sh'
+	'coc-sh',
+	'coc-go'
 }
 
 packer.startup(function(use)
