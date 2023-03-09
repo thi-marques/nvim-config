@@ -34,7 +34,12 @@ autocmd("BufWritePost", {
 -- Auto reload plugins on save
 autocmd("BufWritePost", {
 	pattern = 'plugins.lua',
-	command = 'source <afile> | CocUpdateSync | PackerSync '
+	command = 'source <afile> | CocRestart'
+})
+
+autocmd("BufWritePost", {
+  pattern = 'plugins.lua',
+  command = 'source <afile> | PackerUpdate'
 })
 
 -- Prevent Markdown for complain about underscores
