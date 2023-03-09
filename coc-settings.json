@@ -19,5 +19,9 @@
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextCurrentLineOnly": false,
 
-  "rust-analyzer.enable": true
+  "rust-analyzer.enable": true,
+
+	// coc-explorer
+	"explorer.position": "right",
+	"explorer.width": 60
 }

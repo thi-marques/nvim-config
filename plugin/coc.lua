@@ -174,3 +174,6 @@ opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
 -- keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
 -- -- Resume latest coc list
 -- keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
+
+-- Coc-explorer
+keyset('n', '<Leader>n', ':CocCommand explorer<Return>', { silent = true })

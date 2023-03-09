@@ -17,7 +17,8 @@ vim.g.coc_global_extensions = {
 	'coc-lua',
 	'coc-rust-analyzer',
 	'coc-sh',
-	'coc-go'
+	'coc-go',
+	'coc-explorer'
 }
 
 packer.startup(function(use)
@@ -79,10 +80,6 @@ packer.startup(function(use)
 		"petertriho/nvim-scrollbar",
 		requires = { { "lewis6991/gitsigns.nvim" } },
 	})
-
-	-- NERDTree
-	use("preservim/nerdtree")
-	use("ryanoasis/vim-devicons")
 
 	if packer_bootstrap then
 		packer.sync()
