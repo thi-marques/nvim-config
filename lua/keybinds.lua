@@ -47,7 +47,7 @@ keyset('n', '<C-k>', '<C-b>')
 
 -- Lines copy/move
 keyset('n', '<M-k>', ':move .-2<Return>==')
-keyset('n', '<M-K>', ':copy .1<Return>==')
+keyset('n', '<M-K>', ':copy .-1<Return>==')
 keyset('n', '<M-j>', ':move .+1<Return>==')
 keyset('n', '<M-J>', ':copy .+0<Return>==')
 keyset('i', '<M-k>', '<Esc>:move .-2<Return>==gi')
